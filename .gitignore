@@ -1,0 +1,17 @@
+# Files
+.cache
+.editorconfig
+.env
+*.code-workspace
+
+# Files - Created
+*.csv
+*.png
+!simple_visual.png
+
+# Directories
+__pycache__
+.vscode
+csv
+img
+venv
