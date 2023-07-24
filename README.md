@@ -42,6 +42,7 @@ Run the `main.py` file in your editor of choice.
 ## Authors and acknowledgment
 
 ### Tools/Libraries
+* [Circlify](https://github.com/elmotec/circlify)
 * [Spotify for Developers](https://developer.spotify.com/)
 * [Spotipy](https://spotipy.readthedocs.io/)
 
