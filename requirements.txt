@@ -1,0 +1,5 @@
+circlify
+matplotlib
+pandas
+python-dotenv
+spotipy
