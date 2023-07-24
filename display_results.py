@@ -104,16 +104,12 @@ class Visualizer:
             # TEXT
             # Wrap based on length and r - magic numbers
             width = 14
-            if r > 0.4:
-                width: 14
-            elif r > 0.2 and r <= 0.4:
-                width: 10
-            label = "\n".join(
-                textwrap.wrap(label, width=width, break_long_words=False, max_lines=2)
-            )
+            if r > 180:
+                width = 10
+            label = "\n".join(textwrap.wrap(label, width=width, break_long_words=False, max_lines=2))
 
             # Font is loosely based on radius
-            font_size = int(0.07 * r) if int(0.07 * r) > 10 else 10
+            font_size = int(0.075 * r) if int(0.075 * r) > 12 else 10
 
             # Apply annotation
             plt.annotate(
