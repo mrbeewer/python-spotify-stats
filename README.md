@@ -3,6 +3,8 @@
 ## Description
 Random demo project using the Spotipy library to create a simple little visual similar to Spotify wrapped, but limited to only the top tracks, top genres, and top artists.
 
+NOTE: This project is mirrored on both my GitHub and GitLab repositories as it is a demo.
+
 ## Visuals
 ![Simple visual with top 5 tracks, top 3 genres, and top 5 artists with circle packing](simple_visual.png)
 
