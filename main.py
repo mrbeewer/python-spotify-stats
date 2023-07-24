@@ -2,7 +2,7 @@ import circlify as circ
 import pandas as pd
 
 from spotify_wrapper import SpotipyWrapper
-from display_results import Visualizer
+from visualizer import Visualizer
 
 # Initialize our spotipy wrapper with a scope
 spotify_data = SpotipyWrapper("user-top-read")

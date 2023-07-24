@@ -122,4 +122,6 @@ class Visualizer:
                 ha="center",
             )
 
+        plt.savefig("generated_visual.png")
+        plt.savefig("generated_visual.svg")
         plt.show()
