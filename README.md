@@ -3,6 +3,8 @@
 ## Description
 Random demo project using the Spotipy library to create a simple little visual similar to Spotify wrapped, but limited to only the top tracks, top genres, and top artists.
 
+Will create a PNG and SVG of the (incredibly) simple visual. Use the SVG file to make something beautiful!
+
 NOTE: This project is mirrored on both my GitHub and GitLab repositories as it is a demo.
 
 ## Visuals
