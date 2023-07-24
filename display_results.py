@@ -24,9 +24,7 @@ class Visualizer:
         top_five_tracks_str = "\n".join(
             [
                 str(row[0] + 1) + ". " + row[1] + " - " + row[2]
-                for row in zip(
-                    top_tracks["rank"], top_tracks["title"], top_tracks["artist"]
-                )
+                for row in zip(top_tracks["rank"], top_tracks["title"], top_tracks["artist"])
             ]
         )
         plt_top_tracks.axis("off")
@@ -80,9 +78,7 @@ class Visualizer:
         top_artists = top_artists[::-1]
 
         # Loop through circles and plot:
-        for circle, label, artist_image in zip(
-            artist_packed_circles, top_artists["artist"], top_artists["filename"]
-        ):
+        for circle, label, artist_image in zip(artist_packed_circles, top_artists["artist"], top_artists["filename"]):
             # Get the position and radius of the circle
             x, y, r = circle
 
@@ -94,22 +90,16 @@ class Visualizer:
             im = np.asarray(img)
 
             # Place the image and size to the circle
-            im = plt_top_artists.imshow(
-                im, extent=(int(x - r * SPACING), int(x + r), int(y - r), int(y + r))
-            )
+            im = plt_top_artists.imshow(im, extent=(int(x - r * SPACING), int(x + r), int(y - r), int(y + r)))
 
             # Create the mask for the image crop
-            patch = patches.Circle(
-                (x, y), radius=(r * SPACING), transform=plt_top_artists.transData
-            )
+            patch = patches.Circle((x, y), radius=(r * SPACING), transform=plt_top_artists.transData)
 
             # Set the clip for the image using the patch
             im.set_clip_path(patch)
 
             # Add a color overlay so text stands out better
-            plt_top_artists.add_patch(
-                plt.Circle((x, y), r * SPACING, color=(0.1, 0.2, 0.5, 0.75))
-            )
+            plt_top_artists.add_patch(plt.Circle((x, y), r * SPACING, color=(0.1, 0.2, 0.5, 0.75)))
 
             # TEXT
             # Wrap based on length and r - magic numbers
